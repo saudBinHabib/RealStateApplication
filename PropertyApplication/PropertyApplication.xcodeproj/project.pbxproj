@@ -14,6 +14,16 @@
 		5E4046591E9E91400026C9E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E4046571E9E91400026C9E7 /* LaunchScreen.storyboard */; };
 		5E4046641E9E91400026C9E7 /* PropertyApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046631E9E91400026C9E7 /* PropertyApplicationTests.swift */; };
 		5E40466F1E9E91410026C9E7 /* PropertyApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40466E1E9E91400026C9E7 /* PropertyApplicationUITests.swift */; };
+		5E4046861E9E9AF30026C9E7 /* DeteiledSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40467C1E9E9AF30026C9E7 /* DeteiledSearchViewController.swift */; };
+		5E4046871E9E9AF30026C9E7 /* HomePageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40467D1E9E9AF30026C9E7 /* HomePageTableViewController.swift */; };
+		5E4046881E9E9AF30026C9E7 /* ListingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40467E1E9E9AF30026C9E7 /* ListingDetailsViewController.swift */; };
+		5E4046891E9E9AF30026C9E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E40467F1E9E9AF30026C9E7 /* LoginViewController.swift */; };
+		5E40468A1E9E9AF30026C9E7 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046801E9E9AF30026C9E7 /* MenuController.swift */; };
+		5E40468B1E9E9AF30026C9E7 /* PostListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046811E9E9AF30026C9E7 /* PostListingViewController.swift */; };
+		5E40468C1E9E9AF30026C9E7 /* ProjectConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046821E9E9AF30026C9E7 /* ProjectConfigs.swift */; };
+		5E40468D1E9E9AF30026C9E7 /* PropertyListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046831E9E9AF30026C9E7 /* PropertyListing.swift */; };
+		5E40468E1E9E9AF30026C9E7 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046841E9E9AF30026C9E7 /* RegisterPageViewController.swift */; };
+		5E40468F1E9E9AF30026C9E7 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046851E9E9AF30026C9E7 /* SignOutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		5E40466A1E9E91400026C9E7 /* PropertyApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E40466E1E9E91400026C9E7 /* PropertyApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyApplicationUITests.swift; sourceTree = "<group>"; };
 		5E4046701E9E91410026C9E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E40467C1E9E9AF30026C9E7 /* DeteiledSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeteiledSearchViewController.swift; sourceTree = "<group>"; };
+		5E40467D1E9E9AF30026C9E7 /* HomePageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageTableViewController.swift; sourceTree = "<group>"; };
+		5E40467E1E9E9AF30026C9E7 /* ListingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingDetailsViewController.swift; sourceTree = "<group>"; };
+		5E40467F1E9E9AF30026C9E7 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E4046801E9E9AF30026C9E7 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		5E4046811E9E9AF30026C9E7 /* PostListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostListingViewController.swift; sourceTree = "<group>"; };
+		5E4046821E9E9AF30026C9E7 /* ProjectConfigs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectConfigs.swift; sourceTree = "<group>"; };
+		5E4046831E9E9AF30026C9E7 /* PropertyListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListing.swift; sourceTree = "<group>"; };
+		5E4046841E9E9AF30026C9E7 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		5E4046851E9E9AF30026C9E7 /* SignOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +117,16 @@
 		5E40464D1E9E91400026C9E7 /* PropertyApplication */ = {
 			isa = PBXGroup;
 			children = (
+				5E40467C1E9E9AF30026C9E7 /* DeteiledSearchViewController.swift */,
+				5E40467D1E9E9AF30026C9E7 /* HomePageTableViewController.swift */,
+				5E40467E1E9E9AF30026C9E7 /* ListingDetailsViewController.swift */,
+				5E40467F1E9E9AF30026C9E7 /* LoginViewController.swift */,
+				5E4046801E9E9AF30026C9E7 /* MenuController.swift */,
+				5E4046811E9E9AF30026C9E7 /* PostListingViewController.swift */,
+				5E4046821E9E9AF30026C9E7 /* ProjectConfigs.swift */,
+				5E4046831E9E9AF30026C9E7 /* PropertyListing.swift */,
+				5E4046841E9E9AF30026C9E7 /* RegisterPageViewController.swift */,
+				5E4046851E9E9AF30026C9E7 /* SignOutViewController.swift */,
 				5E40464E1E9E91400026C9E7 /* AppDelegate.swift */,
 				5E4046501E9E91400026C9E7 /* ViewController.swift */,
 				5E4046521E9E91400026C9E7 /* Main.storyboard */,
@@ -262,8 +292,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4046891E9E9AF30026C9E7 /* LoginViewController.swift in Sources */,
+				5E40468C1E9E9AF30026C9E7 /* ProjectConfigs.swift in Sources */,
+				5E40468B1E9E9AF30026C9E7 /* PostListingViewController.swift in Sources */,
+				5E40468A1E9E9AF30026C9E7 /* MenuController.swift in Sources */,
+				5E4046881E9E9AF30026C9E7 /* ListingDetailsViewController.swift in Sources */,
+				5E40468E1E9E9AF30026C9E7 /* RegisterPageViewController.swift in Sources */,
+				5E40468D1E9E9AF30026C9E7 /* PropertyListing.swift in Sources */,
 				5E4046511E9E91400026C9E7 /* ViewController.swift in Sources */,
 				5E40464F1E9E91400026C9E7 /* AppDelegate.swift in Sources */,
+				5E4046861E9E9AF30026C9E7 /* DeteiledSearchViewController.swift in Sources */,
+				5E40468F1E9E9AF30026C9E7 /* SignOutViewController.swift in Sources */,
+				5E4046871E9E9AF30026C9E7 /* HomePageTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
