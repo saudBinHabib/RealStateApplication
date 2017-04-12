@@ -24,6 +24,7 @@
 		5E40468D1E9E9AF30026C9E7 /* PropertyListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046831E9E9AF30026C9E7 /* PropertyListing.swift */; };
 		5E40468E1E9E9AF30026C9E7 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046841E9E9AF30026C9E7 /* RegisterPageViewController.swift */; };
 		5E40468F1E9E9AF30026C9E7 /* SignOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046851E9E9AF30026C9E7 /* SignOutViewController.swift */; };
+		5E4046941E9E9DD90026C9E7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4046931E9E9DD90026C9E7 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,9 @@
 		5E4046831E9E9AF30026C9E7 /* PropertyListing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyListing.swift; sourceTree = "<group>"; };
 		5E4046841E9E9AF30026C9E7 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 		5E4046851E9E9AF30026C9E7 /* SignOutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOutViewController.swift; sourceTree = "<group>"; };
+		5E4046911E9E9DD90026C9E7 /* PropertyApplication-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PropertyApplication-Bridging-Header.h"; sourceTree = "<group>"; };
+		5E4046921E9E9DD90026C9E7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		5E4046931E9E9DD90026C9E7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		5E4046421E9E91400026C9E7 = {
 			isa = PBXGroup;
 			children = (
+				5E4046901E9E9DB00026C9E7 /* SWRevealViewController */,
 				5E40464D1E9E91400026C9E7 /* PropertyApplication */,
 				5E4046621E9E91400026C9E7 /* PropertyApplicationTests */,
 				5E40466D1E9E91400026C9E7 /* PropertyApplicationUITests */,
@@ -153,6 +158,16 @@
 				5E4046701E9E91410026C9E7 /* Info.plist */,
 			);
 			path = PropertyApplicationUITests;
+			sourceTree = "<group>";
+		};
+		5E4046901E9E9DB00026C9E7 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E4046921E9E9DD90026C9E7 /* SWRevealViewController.h */,
+				5E4046931E9E9DD90026C9E7 /* SWRevealViewController.m */,
+				5E4046911E9E9DD90026C9E7 /* PropertyApplication-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +239,7 @@
 					5E40464A1E9E91400026C9E7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ZP4S9WUHAG;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					5E40465E1E9E91400026C9E7 = {
@@ -292,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E4046941E9E9DD90026C9E7 /* SWRevealViewController.m in Sources */,
 				5E4046891E9E9AF30026C9E7 /* LoginViewController.swift in Sources */,
 				5E40468C1E9E9AF30026C9E7 /* ProjectConfigs.swift in Sources */,
 				5E40468B1E9E9AF30026C9E7 /* PostListingViewController.swift in Sources */,
@@ -455,11 +472,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZP4S9WUHAG;
 				INFOPLIST_FILE = PropertyApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PropertyApplication-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -468,11 +488,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = ZP4S9WUHAG;
 				INFOPLIST_FILE = PropertyApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PropertyApplication-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
