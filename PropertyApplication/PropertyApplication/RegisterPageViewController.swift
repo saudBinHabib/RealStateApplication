@@ -2,8 +2,7 @@
 //  RegisterPageViewController.swift
 //  PropertyApplication
 //
-//  Created by Saad Abdullah Gondal on 3/5/17.
-//  Copyright © 2017 Saad Abdullah Gondal. All rights reserved.
+//  Created by Saud Bin Habib
 //
 
 import UIKit
@@ -122,7 +121,7 @@ class RegisterPageViewController: UIViewController {
         
     }
     
-    func displayMyAlertMessage(userMessage : String)
+    @objc func displayMyAlertMessage(userMessage : String)
     {
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
         

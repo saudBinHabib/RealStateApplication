@@ -2,8 +2,7 @@
 //  ListingDetailsViewController.swift
 //  PropertyApplication
 //
-//  Created by Saad Abdullah Gondal on 3/10/17.
-//  Copyright © 2017 Saad Abdullah Gondal. All rights reserved.
+//  Created by Saud Bin Habib
 //
 
 import UIKit
@@ -12,9 +11,9 @@ class ListingDetailsViewController: UIViewController {
 
     
     @IBOutlet weak var listingTitle: UILabel!
-    var selectedTitle:String?
+    @objc var selectedTitle:String?
     @IBOutlet weak var listingImage: UIImageView!
-    var selectedImage:UIImage?
+    @objc var selectedImage:UIImage?
     var propertyListingObj : PropertyListing! = PropertyListing()
     
     @IBOutlet weak var address: UILabel!

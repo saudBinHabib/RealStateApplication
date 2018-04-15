@@ -2,8 +2,7 @@
 //  PropertyApplicationUITests.swift
 //  PropertyApplicationUITests
 //
-//  Created by Saad Abdullah Gondal on 4/12/17.
-//  Copyright © 2017 Saad Abdullah Gondal. All rights reserved.
+//  Created by Saud Bin Habib
 //
 
 import XCTest

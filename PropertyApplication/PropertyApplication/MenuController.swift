@@ -2,16 +2,15 @@
 //  MenuController.swift
 //  PropertyApplication
 //
-//  Created by Saad Abdullah Gondal on 3/8/17.
-//  Copyright © 2017 Saad Abdullah Gondal. All rights reserved.
+//  Created by Saud Bin Habib
 //
 
 import UIKit
 
 class MenuController: UITableViewController {
 
-    var userAuthenticated:Bool = false;
-    var userTypeId:Int = 0;
+    @objc var userAuthenticated:Bool = false;
+    @objc var userTypeId:Int = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +66,7 @@ class MenuController: UITableViewController {
         }
     }
     
-    func displayMyAlertMessage(userMessage : String)
+    @objc func displayMyAlertMessage(userMessage : String)
     {
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
         

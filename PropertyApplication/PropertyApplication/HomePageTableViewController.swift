@@ -2,8 +2,7 @@
 //  HomePageViewControllerTableTableViewController.swift
 //  PropertyApplication
 //
-//  Created by Saad Abdullah Gondal on 3/8/17.
-//  Copyright © 2017 Saad Abdullah Gondal. All rights reserved.
+//  Created by Saud Bin Habib
 //
 
 import UIKit
@@ -19,13 +18,13 @@ class HomePageTableViewController: UITableViewController, UISearchResultsUpdatin
     var testArray:Array<test>?
     
     var propertyListings = [test]()
-    var propertyImages = [String]()
+    @objc var propertyImages = [String]()
     var propertyDesc = [PropertyListing]()
     
-    var searchController : UISearchController!
-    var resultsController = UITableViewController()
+    @objc var searchController : UISearchController!
+    @objc var resultsController = UITableViewController()
     var filteredPropertyListings = [test]()
-    var filteredPropertyImages = [String]()
+    @objc var filteredPropertyImages = [String]()
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var searchButton: UIBarButtonItem!
@@ -33,7 +32,7 @@ class HomePageTableViewController: UITableViewController, UISearchResultsUpdatin
     
     @IBOutlet weak var image: UIImageView!
     
-    static var criteria : String!
+    @objc static var criteria : String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +82,7 @@ class HomePageTableViewController: UITableViewController, UISearchResultsUpdatin
         
     }
     
-    func getAllPropetyListings()
+    @objc func getAllPropetyListings()
     {
         // POST request to server
         let hostAddress = ProjectConfigs.hostAddress;
@@ -157,7 +156,7 @@ class HomePageTableViewController: UITableViewController, UISearchResultsUpdatin
         
     }
     
-    func getPropertyListingsWithCount()
+    @objc func getPropertyListingsWithCount()
     {
         let scriptUrl = ProjectConfigs.hostAddress + ProjectConfigs.getPropertyListingsWithCount + "/?count=10";
         let myUrl = URL(string: scriptUrl)
@@ -279,7 +278,7 @@ class HomePageTableViewController: UITableViewController, UISearchResultsUpdatin
 //        self.resultsController.tableView.reloadData()
 //    }
     
-    func queryDetailedSearch(criteria : String)
+    @objc func queryDetailedSearch(criteria : String)
         {
             let scriptUrl = ProjectConfigs.hostAddress + ProjectConfigs.getPropertyListingsWithParams + criteria;
             
@@ -400,7 +399,7 @@ class HomePageTableViewController: UITableViewController, UISearchResultsUpdatin
         return cell
     }
     
-    func imageWithImage(image:UIImage)->UIImage{
+    @objc func imageWithImage(image:UIImage)->UIImage{
         
         UIGraphicsBeginImageContext( CGSize(width: 200, height: 200) )
         image.draw(in: CGRect(x: 0,y: 0,width: 200,height: 200))

@@ -2,8 +2,7 @@
 //  LoginViewController.swift
 //  PropertyApplication
 //
-//  Created by Saad Abdullah Gondal on 3/5/17.
-//  Copyright © 2017 Saad Abdullah Gondal. All rights reserved.
+//  Created by Saud Bin Habib
 //
 
 import UIKit
@@ -14,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var userPasswordTextField: UITextField!
     
-    var userAuthenticated:Bool = false;
+    @objc var userAuthenticated:Bool = false;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,11 +61,13 @@ class LoginViewController: UIViewController {
         
         // POST request to server
         let hostAddress = ProjectConfigs.hostAddress;
-        let myUrl = URL(string: "\(hostAddress)/Property/ios_loginservice/signInUser");
+        let myUrl = URL(string: "\(hostAddress)login");
         var request = URLRequest(url: myUrl!);
         request.httpMethod = "POST";
+        let postString = "username=\(userEmail)&password=\(userPassword)"
         
-        let jsonPostString: [String: Any] = ["email": userEmail ?? "", "password": userPassword ?? ""];
+        
+        let jsonPostString: [String: Any] = ["username": userEmail ?? "", "password": userPassword ?? ""];
         let jsonData = try? JSONSerialization.data(withJSONObject: jsonPostString)
         
         request.httpBody = jsonData;
@@ -81,49 +82,48 @@ class LoginViewController: UIViewController {
             
             print(response?.mimeType)
             do {
-                let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? Dictionary<String, Any>
-                
-                if let parseJSON = json {
-                    let status = parseJSON["status"] as? String
-                    print("result::::::: \(status)")
-                    
-                    let userTypeId = parseJSON["userTypeId"] as? String
-                    print("user type id :::::: \(userTypeId)")
-                    
-                    print("user type ::::: \(parseJSON["userTypeDescription"])")
-                    
-                    if(status == "Success")
-                    {
-                        
-                        DispatchQueue.main.async {
-                            self.performSegue(withIdentifier: "afterLogin", sender: self);
-                            
-                            
-                        }
-                        
+                let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as AnyObject
+                print (json)
+                let status = json["success"] as? Bool
+                if(status == true)
+                {
+                    if let data1 = json["data"] as? NSDictionary {
+                        let userTypeId = data1["UserTypeId"] as? String
+                        print("user type id :::::: \(userTypeId)")
                         UserDefaults.standard.set(true, forKey: "userAuthenticated");
                         UserDefaults.standard.set(userTypeId, forKey: "userTypeId")
-                        
                     }
-                    else if(status == "Error")
-                    {
-                        print (">>>>>>>>>>> in error block");
-                        DispatchQueue.main.async {
-                            self.displayMyAlertMessage(userMessage: "Invalid UserName or Password");
-                        }
-                        
-                        UserDefaults.standard.set(false, forKey: "userAuthenticated");
-                        return;
+                    DispatchQueue.main.async {
+                        self.performSegue(withIdentifier: "afterLogin", sender: self);
                     }
-                    else
-                    {
-                        print ("Oder hier?????");
+                }
+                else if(status == false)
+                {
+                    print (">>>>>>>>>>> in error block");
+                    DispatchQueue.main.async {
+                        self.displayMyAlertMessage(userMessage: "Invalid UserName or Password");
                     }
+                    UserDefaults.standard.set(false, forKey: "userAuthenticated");
+                    return;
                 }
                 else
                 {
-                    print ("hier");
+                    print ("Oder hier?????");
                 }
+//                if let parseJSON = json {
+//                    let status = parseJSON["success"] as? String
+//                    print("result::::::: \(status)")
+//
+//
+//
+//                    print("user type ::::: \(parseJSON["userTypeDescription"])")
+//
+//
+//                }
+//                else
+//                {
+//                    print ("hier");
+//                }
             } catch {
                 print("Error:::: ",error)
             }
@@ -134,7 +134,7 @@ class LoginViewController: UIViewController {
         task.resume();
     }
     
-    func displayMyAlertMessage(userMessage : String)
+    @objc func displayMyAlertMessage(userMessage : String)
     {
         let myAlert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertControllerStyle.alert);
         

@@ -127,9 +127,9 @@
 				5E40467E1E9E9AF30026C9E7 /* ListingDetailsViewController.swift */,
 				5E40467F1E9E9AF30026C9E7 /* LoginViewController.swift */,
 				5E4046801E9E9AF30026C9E7 /* MenuController.swift */,
-				5E4046811E9E9AF30026C9E7 /* PostListingViewController.swift */,
 				5E4046821E9E9AF30026C9E7 /* ProjectConfigs.swift */,
 				5E4046831E9E9AF30026C9E7 /* PropertyListing.swift */,
+				5E4046811E9E9AF30026C9E7 /* PostListingViewController.swift */,
 				5E4046841E9E9AF30026C9E7 /* RegisterPageViewController.swift */,
 				5E4046851E9E9AF30026C9E7 /* SignOutViewController.swift */,
 				5E40464E1E9E91400026C9E7 /* AppDelegate.swift */,
@@ -233,24 +233,26 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Saad Abdullah Gondal";
 				TargetAttributes = {
 					5E40464A1E9E91400026C9E7 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ZP4S9WUHAG;
-						LastSwiftMigration = 0820;
+						DevelopmentTeam = XHT32DL7EC;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					5E40465E1E9E91400026C9E7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ZP4S9WUHAG;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5E40464A1E9E91400026C9E7;
 					};
 					5E4046691E9E91400026C9E7 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ZP4S9WUHAG;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 5E40464A1E9E91400026C9E7;
 					};
@@ -384,7 +386,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -392,7 +396,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -434,7 +442,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -442,7 +452,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -473,14 +487,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZP4S9WUHAG;
+				DEVELOPMENT_TEAM = XHT32DL7EC;
 				INFOPLIST_FILE = PropertyApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "saudkhan3551-outlook.com.PropertyApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PropertyApplication-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -489,13 +503,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = ZP4S9WUHAG;
+				DEVELOPMENT_TEAM = XHT32DL7EC;
 				INFOPLIST_FILE = PropertyApplication/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplication;
+				PRODUCT_BUNDLE_IDENTIFIER = "saudkhan3551-outlook.com.PropertyApplication";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PropertyApplication-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -509,7 +523,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplicationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PropertyApplication.app/PropertyApplication";
 			};
 			name = Debug;
@@ -524,7 +538,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplicationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PropertyApplication.app/PropertyApplication";
 			};
 			name = Release;
@@ -538,7 +552,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplicationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = PropertyApplication;
 			};
 			name = Debug;
@@ -552,7 +566,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GDSD.PropertyApplicationUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = PropertyApplication;
 			};
 			name = Release;
@@ -576,6 +590,7 @@
 				5E4046751E9E91410026C9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E4046761E9E91410026C9E7 /* Build configuration list for PBXNativeTarget "PropertyApplicationTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +599,7 @@
 				5E4046781E9E91410026C9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E4046791E9E91410026C9E7 /* Build configuration list for PBXNativeTarget "PropertyApplicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -592,6 +608,7 @@
 				5E40467B1E9E91410026C9E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
